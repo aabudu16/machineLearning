@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         arView.scene.anchors.append(boxAnchor)
     }
     
-    func setupCaptureSession(){
+    func setupCaptureSession() {
         guard let captureDevice = AVCaptureDevice.default(for: .video) else {return}
         guard let input = try? AVCaptureDeviceInput(device: captureDevice) else {return}
         captureSession.addInput(input)
